@@ -35,7 +35,8 @@ embedding_model=HuggingFaceEmbeddings(
 
 vector_store=Chroma.from_documents(
     documents=chunks,
-    embedding=embedding_model)
+    embedding=embedding_model,
+    persist_directory="./chroma_db")
 
 retriever=vector_store.as_retriever(
     search_type="similarity",
@@ -154,6 +155,7 @@ for chat in st.session_state.chat_history:
         st.write(chat["question"])
     with st.chat_message("assistant"):
         st.write(chat["answer"])
+
 
 
 
