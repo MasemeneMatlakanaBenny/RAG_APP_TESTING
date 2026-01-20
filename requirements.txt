@@ -4,8 +4,10 @@ langchain-text-splitters
 langchain-huggingface
 langgraph
 streamlit
+sentence-transformers
 pypdf
 pymupdf
 pdfreader
 PyPDF2
+
 Chroma
