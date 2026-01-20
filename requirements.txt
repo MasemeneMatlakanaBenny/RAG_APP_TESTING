@@ -1,0 +1,11 @@
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+langgraph
+streamlit
+pypdf
+pymupdf
+pdfreader
+PyPDF2
+Chroma
