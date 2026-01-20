@@ -10,12 +10,12 @@ from langchain_community.document_loaders import PyPDFLoader
 doc=Document(
     page_content="Forecasting Metrics Glossary",
     source={
-        "source":"C:\\Users\\btlak\\Downloads\\Forecast Verification Glossary.pdf",
+        "source":"Forecast Verification Glossary.pdf",
         "field":"Time Series and Forecasting in Machine Learning"
     }
 )
 
-loader=PyPDFLoader("C:\\Users\\btlak\\Downloads\\Forecast Verification Glossary.pdf")
+loader=PyPDFLoader("Forecast Verification Glossary.pdf")
 document=loader.load()
 
 ## create the text splitter:
@@ -154,6 +154,7 @@ for chat in st.session_state.chat_history:
         st.write(chat["question"])
     with st.chat_message("assistant"):
         st.write(chat["answer"])
+
 
 
 
