@@ -9,5 +9,5 @@ pypdf
 pymupdf
 pdfreader
 PyPDF2
+chromadb
 
-Chroma
